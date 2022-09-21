@@ -1,4 +1,4 @@
-package com.revature.sept12;
+package com.revature.sept_12;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,13 +25,13 @@ public class DriverA {
         Integer[] arr2 = {63251, 78221};
         Integer[] arr3 = {1, 2, 3, 4, 3, 1, 5};
 
-        reorderDigits(arr, "asc");
-        reorderDigits(arr, "desc");
+        reorderDigits(arr, "asc");  // Array[]: [44, 98, 211, 341, 515]
+        reorderDigits(arr, "desc"); // Array[]: [515, 341, 211, 98, 44]
 
-        reorderDigits(arr2, "asc");
-        reorderDigits(arr2, "desc");
+        reorderDigits(arr2, "asc"); // Array[]: [63251, 78221]
+        reorderDigits(arr2, "desc");// Array[]: [78221, 63251]
 
-        reorderDigits(arr3, "asc");
-        reorderDigits(arr3, "desc");
+        reorderDigits(arr3, "asc"); // Array[]: [1, 2, 3, 4, 3, 1, 5]
+        reorderDigits(arr3, "desc");// Array[]: [1, 2, 3, 4, 3, 1, 5]
     }
 }
