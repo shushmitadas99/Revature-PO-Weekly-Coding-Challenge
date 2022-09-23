@@ -2,6 +2,7 @@ package com.revature.sept_19;
 
 import java.util.Scanner;
 
+//Write a program that accepts sets of three numbers and prints the second-maximum number among the three.
 public class SecondMaximum {
 
     public static void main(String[] args) {
