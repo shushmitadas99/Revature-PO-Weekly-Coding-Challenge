@@ -5,22 +5,17 @@ import java.util.Arrays;
 public class LargestGap {
     public static int largestGap (int[] array){
         Arrays.sort(array);
-        int largestGapInt = 0, difference = 0, newDifference = 0;
+        int largestGapInt = 0;
+        int difference = Math.abs(array[1] - array[0]);
+
         for(int i = 0; i < array.length; i++) {
             for(int j = 1; j < array.length; j++){
-                difference = Math.abs(array[j] - array[i]);
-                newDifference = Math.abs(array[j] - array[i]);
-
-                if (newDifference > difference){
-                    largestGapInt = newDifference;
-                } else if (difference > newDifference) {
+                if (array[j] - array[i] > difference) {
+                    difference = Math.abs(array[j] - array[i]);
                     largestGapInt = difference;
-                } else {
-                    largestGapInt = 0;
                 }
             }
         }
-
         return largestGapInt;
     }
     public static void main(String[] args) {
@@ -29,5 +24,7 @@ public class LargestGap {
         int[] arr3 = {13, 3, 8, 5, 5, 2, 13, 6, 14, 2, 11, 4, 10, 8, 1, 9};
 
         System.out.println(largestGap(arr1));
+        System.out.println(largestGap(arr2));
+        System.out.println(largestGap(arr3));
     }
 }
