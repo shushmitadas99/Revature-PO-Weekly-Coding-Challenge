@@ -1,4 +1,4 @@
-package com.revature.sept_26;
+package com.revature.sep_26;
 
 import java.util.Arrays;
 

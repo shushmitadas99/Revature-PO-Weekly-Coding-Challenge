@@ -1,4 +1,4 @@
-package com.revature.sept_19;
+package com.revature.sep_19;
 
 import java.util.Scanner;
 
