@@ -1,5 +1,10 @@
 package com.revature.oct_10;
 
+class ListNode
+{
+    int data;
+    ListNode next;
+}
 public class LoopDetection {
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head, fast = head;
